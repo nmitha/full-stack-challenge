@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rebeccapurple;
+  padding: 1px;
+  color: white;
+  
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 1em;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+  margin-right: 4em;
+}
+
+.itemCollection > .item {
+  background-color: lightgoldenrodyellow;
+  margin-right: 3em;
+}
+
+.itemDelete {
+  cursor: pointer;
+  color: red;
+}
+
+.itemDelete:hover {
+  text-decoration: none;
+}
+
+.editableItem::before {
+  content: "📝 ";
+  font-size: "2em";
+}
+
+.editableItem:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,94 @@
+{
+	"id": "977f5a62-1452-3f0f-ee97-6bc97149f0df",
+	"name": "Paytm GitHub Challenge",
+	"description": "",
+	"order": [
+		"020262ed-ebf0-98da-66e0-dcb82b0b48c4",
+		"1412f870-922f-b28a-a5f5-7eaeec642897",
+		"9c054f0e-528e-cac7-a2af-1a062cd1be95"
+	],
+	"folders": [],
+	"timestamp": 1484884253612,
+	"owner": "1456508",
+	"public": false,
+	"requests": [
+		{
+			"id": "020262ed-ebf0-98da-66e0-dcb82b0b48c4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost:9000/api/employees",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "977f5a62-1452-3f0f-ee97-6bc97149f0df",
+			"data": [
+				{
+					"key": "email",
+					"value": "jane.manager@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "firstName",
+					"value": "Jane",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Manager",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "POST new employee",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1484884435762,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "1412f870-922f-b28a-a5f5-7eaeec642897",
+			"headers": "",
+			"url": "http://localhost:9000/api/employees",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "977f5a62-1452-3f0f-ee97-6bc97149f0df",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get employees (all)",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1484884489165,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9c054f0e-528e-cac7-a2af-1a062cd1be95",
+			"headers": "",
+			"url": "http://localhost:9000/api/employees/jane.manager@gmail.com",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484885463822,
+			"name": "Get one employee by email",
+			"description": "",
+			"collectionId": "977f5a62-1452-3f0f-ee97-6bc97149f0df",
+			"responses": []
+		}
+	]
+}
