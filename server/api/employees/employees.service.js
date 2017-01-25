@@ -57,7 +57,7 @@ function getEmployeeByEmail(email, callback) {
 
 /**
  * Add a new employee
- * @param {Object} employee - A valid employee object with email, firstName and lastName
+ * @param {Employee} employee - A valid employee object with email, firstName and lastName
  * @param {Function} callback - function(err) {} .  If err in callback is undefined or null then the add operation succeeded.
  */
 function addEmployee(employee, callback) {
