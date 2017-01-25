@@ -1,9 +1,9 @@
-/* eslint-env mocha */
+/* eslint-env node, jest */
 const employeesService = require('./employees.service.js');
 
 let incr=0;
 function generateUniqueEmail() {
-    return ('usr' + incr++ + '@gmail.com');
+    return (`user_${incr++}@gmail.com`);
 }
 
 let okEmployeeEmail = generateUniqueEmail();
@@ -15,9 +15,9 @@ it('can add an employee with a unique email address', (done) => {
         lastName: 'Snowflake'
     };
     employeesService.addEmployee(newEmployee, (err) => {
-        if (err) done(err);
+        if (err) done.fail(err);
         else done();
-    })
+    });
 });
 
 it('should not allow 2 employees with the same email address', (done) => {
@@ -29,7 +29,7 @@ it('should not allow 2 employees with the same email address', (done) => {
         lastName: 'ThereFirst'
     };
     employeesService.addEmployee(newEmployee, (err) => {
-        if (err) done(err);
+        if (err) done.fail(err);
         else done();
     });
 
@@ -40,7 +40,7 @@ it('should not allow 2 employees with the same email address', (done) => {
     };
     employeesService.addEmployee(newEmployee2, (err) => {
         if (err) done(); // all good, we want an error
-        else done(new Error('System incorrectly allowed 2 employees with same email!'));
+        else done.fail(new Error('System incorrectly allowed 2 employees with same email!'));
     });
 });
 
