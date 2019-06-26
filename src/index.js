@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 
 const a = 'b'; // unused variable to test Stickler CI
-let result1 = 1+2;
+let result1 = 1 + 2;
 
 const myFun = c => (d) =>{ return true; }; // messy code test
 
