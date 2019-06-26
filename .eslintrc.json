@@ -11,6 +11,8 @@
         },
         "sourceType": "module"
     },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react"],
     "rules": {
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
@@ -18,6 +20,7 @@
         "no-unreachable": "warn",
         "no-unused-vars": "warn",
         "constructor-super": "warn",
-        "valid-typeof": "warn"
+        "valid-typeof": "warn",
+        "space-infix-ops": "error"
     }
 }
