@@ -30,7 +30,7 @@ The front end code was written quickly.  Logic is not properly separated from vi
 
 Again I'd be happy to tear apart my code and tell you everything wrong with each line and how it should be done instead. Just ask me :)
 
-The front end UI/UX isn't great, but if you want me for design chops then I'm out. I trust your browser supports [rebeccapurple](http://meyerweb.com/eric/thoughts/2014/06/19/rebeccapurple/).
+The front end UI/UX isn't great, but I'm no designer. I trust your browser supports [rebeccapurple](http://meyerweb.com/eric/thoughts/2014/06/19/rebeccapurple/).
 
 ### Authentication and employee profiles
 
